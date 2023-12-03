@@ -21,7 +21,7 @@ function App() {
         <h2>Shopster</h2>
         {/* Step 4: Add event handler to the dark mode button */}
         <button onClick={toggleDarkMode}>
-          {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          {isDarkMode ? " Light Mode" : "Dark Mode"}
         </button>
       </header>
       <ShoppingList items={itemData} />
