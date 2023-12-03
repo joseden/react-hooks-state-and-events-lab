@@ -9,11 +9,15 @@ function ShoppingList({ items }) {
   };
 
   // Filter items based on the selected category
-  const filteredItems =
-    selectedCategory === "All"
-      ? items
-      : items.filter((item) => item.category === selectedCategory);
+  
+  let filteredItems;
 
+  if (selectedCategory === "All") {
+    filteredItems = items;
+  } else {
+    filteredItems = items.filter((item) => item.category === selectedCategory);
+  }
+  
   return (
     <div className="ShoppingList">
       <div className="Filter">
